@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Code Braces" >
+    <title>To-Do List & Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="to_do_list.css">
+    <link rel="stylesheet" href="calc.css">
+
+    
+</head>
+<body>
+<div class="container">
+    <div class="todo-app">
+        <h2>To-Do List ... <img src="Screenshot 2024-06-13 at 15.09.11.png"></h2>
+        <div class="row">
+            
+            <textarea type="text" id="input-box" placeholder="Add Task"></textarea>
+
+            <div>
+             <p>
+                <input type="date" id="dateinput">
+                <input type="time" id="timeinput">
+                </p>
+            </div>
+
+            <button class="add-button" onclick="addtask()">Add</button>
+        </div>
+        <ul id="list-container">
+           <!---- <li class="checked">task1</li>
+            <li>task2</li>
+            <li>task3</li> -->
+        </ul>
+    </div>
+
+    <div class="calculator">
+        <div class="calculator-screen" id="calculator-screen">0</div>
+        <div class="calculator-keys">
+            <button type="btns" onclick="inputDigit('7')">7</button>
+            <button type="btns" onclick="inputDigit('8')">8</button>
+            <button type="btns" onclick="inputDigit('9')">9</button>
+            <button type="btns" onclick="inputDigit('√')" onclick="getSquareRoot()">&#8730;</button> <!--squrt-->
+            <button type="btns" onclick="inputDigit('4')">4</button>
+            <button type="btns" onclick="inputDigit('5')">5</button>
+            <button type="btns" onclick="inputDigit('6')">6</button>
+            <button type="btns" onclick="handleOperator('/')" class="operator">&divide;</button> <!--divide-->
+            <button type="btns" onclick="inputDigit('1')">1</button>
+            <button type="btns" onclick="inputDigit('2')">2</button>
+            <button type="btns" onclick="inputDigit('3')">3</button>
+            <button type="btns" onclick="handleOperator('*')" class="operator">&times;</button> <!--multiply-->
+            <button type="btns" onclick="inputDigit('0')">0</button>
+            <button type="btns" onclick="inputDecimal()">.</button>
+            <button type="btns" onclick="toggleSign()">+/-</button>
+            <button type="btns" onclick="handleOperator('+')" class="operator">+</button> <!--add-->
+            <button type="btns" onclick="handleOperator('-')" class="operator">-</button> <!--minus-->
+            <button type="btns" onclick="clearAll()"class="all-clear">AC</button> <!--all clear-->
+            <button type="btns" onclick="clearEntry()"class="clear-entry">CE</button> <!--clear entry-->
+            <button type="btns" onclick="handleOperator('=')" class="operator">=</button> <!--equals-->
+            
+        </div>
+
+
+
+
+    </div>
+    
+</div>
+
+<script src="to_do_list.js"></script>
+<script src="calc.js"></script>
+
+</body>
+</html>
+
