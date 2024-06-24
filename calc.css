@@ -32,6 +32,12 @@ body{
     border: #454e57;
     border-radius: 10px;
 }
+.equation-screen {
+    font-size: 20px;
+    color: #999;
+    text-align: right;
+    padding-right: 10px;
+}
 
 .calculator-keys{
     display: flex;
@@ -52,7 +58,7 @@ body{
     box-shadow: 0 0 10px #00000040;
     background-color: #050505;
     color: antiquewhite;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
 }
  
