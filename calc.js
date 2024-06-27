@@ -73,7 +73,7 @@ function getSquareRoot() {
 
 
 function clearEntry() {
-    screenValue = '0';
+    screenValue = screenvalue.slice(0,-1);
     equation = '';
     sqrtActive = false;
     updateScreenDisplay();
